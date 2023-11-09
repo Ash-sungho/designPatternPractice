@@ -1,0 +1,65 @@
+
+/**
+class Hamburger {
+    // 필수 매개변수
+    private int bun;
+    private int patty;
+
+    // 선택 매개변수
+    private int cheese;
+    private int lettuce;
+    private int tomato;
+    private int bacon;
+
+    public Hamburger(int bun, int patty, int cheese, int lettuce, int tomato, int bacon) {
+        this.bun = bun;
+        this.patty = patty;
+        this.cheese = cheese;
+        this.lettuce = lettuce;
+        this.tomato = tomato;
+        this.bacon = bacon;
+    }
+
+    public Hamburger(int bun, int patty, int cheese, int lettuce, int tomato) {
+        this.bun = bun;
+        this.patty = patty;
+        this.cheese = cheese;
+        this.lettuce = lettuce;
+        this.tomato = tomato;
+    }
+
+
+    public Hamburger(int bun, int patty, int cheese, int lettuce) {
+        this.bun = bun;
+        this.patty = patty;
+        this.cheese = cheese;
+        this.lettuce = lettuce;
+    }
+
+    public Hamburger(int bun, int patty, int cheese) {
+        this.bun = bun;
+        this.patty = patty;
+        this.cheese = cheese;
+    }
+
+    ...
+}
+
+ public static void main(String[] args) {
+ // 모든 재료가 있는 햄버거
+ Hamburger hamburger1 = new Hamburger(2, 1, 2, 4, 6, 8);
+
+ // 빵과 패티 치즈만 있는 햄버거
+ Hamburger hamburger2 = new Hamburger(2, 1, 1);
+
+ // 빵과 패티 베이컨만 있는 햄버거
+ Hamburger hamburger3 = new Hamburger(2, 0, 0, 0, 0, 6);
+ }
+ *
+ * 이러한 방식은 클래스 인스턴스 필드들이 많으면 많을 수록 생성자에 들어갈 인자의 수가 늘어나 몇번째 인자가 어떤 필드였는지 햇갈릴 경우가 생기게 된다. 만일 여러 종류의 햄버거를 생성하기 위해 Hamburger 생성자의 몇번째 인수가 양상추의 갯수인지 토마토의 갯수인지 파악할 필요가 있다.
+ *
+ * 또한 매개변수 특성상 순서를 따라야 하기 때문에 위의 '빵과 베이컨만 있는 햄버거'를 원할경우 억지로 파라미터에 0을 전달해야 된다. 생성자로만으로는 필드를 선택적으로 생략할 수 있는 방법이 없기 때문이다.
+ *
+ * 그리고 무엇보다 타입이 다양할 수록 생성자 메서드 수가 기하급수적으로 늘어나 가독성이나 유지보수 측면에서 좋지 않다.
+ *
+ **/
