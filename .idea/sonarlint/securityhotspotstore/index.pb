@@ -57,3 +57,7 @@ V
 -src/behavioral/strategy/ConcreteStorageA.java,a/d/ad944acceb2a694be695357044ec5feb5af1dec3
 Q
 !src/behavioral/strategy/Main.java,a/4/a4704ae01b550567beebd6d0199460a9a014cce9
+[
++src/behavioral/state/practice3/OnState.java,7/8/78e5950c46187cf012ccea02ed6b5cc8420d59d9
+\
+,src/behavioral/state/practice3/OffState.java,7/c/7ce817ecd9e1a56e747278b6e65ab472b74da095
