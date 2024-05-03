@@ -61,3 +61,5 @@ Q
 +src/behavioral/state/practice3/OnState.java,7/8/78e5950c46187cf012ccea02ed6b5cc8420d59d9
 \
 ,src/behavioral/state/practice3/OffState.java,7/c/7ce817ecd9e1a56e747278b6e65ab472b74da095
+a
+1src/behavioral/state/practice3/LaptopContext.java,4/7/47ae4ac25dacd0288f0a49237a2b7d97214f538a
